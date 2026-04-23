@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Poppins&family=Press+Start+2P&display=swap');
+
+body{
+    font-family: 'Press Start 2P', cursive;
+    background-color: #FFF1CB;
+}
+
+.titulo {
+    color: blue;
+    font-size: 34px;
+    font-family: "Bungee Shade", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.subtitulo{
+    color: blueviolet;
+    font-size: 20px;
+}
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetas, .tarjeta-ataques{
+    display: flex;
+    font-size: 12px;
+}
+
+.tarjeta-de-mokepon{
+    width: 200px;
+    height: 150px;
+    background: #B7A3E3;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid #B7A3E3;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjeta-de-mokepon img {
+    width: 80px;
+}
+
+#boton-mascota{
+    height: 60px;
+    background: #C2E2FA;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 2px hotpink;
+    border-radius: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+input{
+    display: none;
+}
+input:checked+label {
+    border: 2px #B7A3E3;
+    background-color: #CA6180;
+}
+
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-ataque{
+    height: 60px;
+    background: #C2E2FA;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 2px hotpink;
+    border-radius: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#mensajes{
+    width: 280px;
+    background: #48A111;
+    padding: 10px;
+    margin-top: auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#boton-reiniciar{
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: #C2E2FA;
+    border-radius: 20px;
+    width: 140px;
+    height: 50px;
+    padding: 10px;
+    margin: 16px;
+    border: transparent;    
+}
+
+.ataques{
+    display:grid;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    text-align: center;
+    font-size: medium;
+    padding: 10px;
+    margin: 16px;
+}
+
+#vidas-jugador, #vidas-enemigo{
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 360px){
+    .tarjetas, .tarjeta-ataques{
+        flex-direction: column;
+    }
+}
